@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <!-- Vinculación del archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluyendo Tailwind CSS para un estilo rápido y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Barra de Navegación -->
+    <nav class="bg-gray-200 p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#inicio" class="text-2xl font-bold text-gray-900 hover:text-teal-600 transition-all-300">Portafolio</a>
+            <div id="nav-menu" class="hidden md:flex space-x-6">
+                <a href="#inicio" class="text-lg text-gray-600 hover:text-teal-600 transition-all-300">Inicio</a>
+                <a href="#acerca-de-mi" class="text-lg text-gray-600 hover:text-teal-600 transition-all-300">Acerca de Mí</a>
+                <a href="#proyectos" class="text-lg text-gray-600 hover:text-teal-600 transition-all-300">Proyectos</a>
+                <a href="#habilidades" class="text-lg text-gray-600 hover:text-teal-600 transition-all-300">Habilidades</a>
+                <a href="#contacto" class="text-lg text-gray-600 hover:text-teal-600 transition-all-300">Contacto</a>
+            </div>
+            <!-- Botón del menú hamburguesa para móviles -->
+            <button id="hamburger-button" class="md:hidden text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú móvil (oculto por defecto) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-200 text-center py-4 space-y-4">
+        <a href="#inicio" class="block text-lg text-gray-600 hover:text-teal-600 transition-all-300">Inicio</a>
+        <a href="#acerca-de-mi" class="block text-lg text-gray-600 hover:text-teal-600 transition-all-300">Acerca de Mí</a>
+        <a href="#proyectos" class="block text-lg text-gray-600 hover:text-teal-600 transition-all-300">Proyectos</a>
+        <a href="#habilidades" class="block text-lg text-gray-600 hover:text-teal-600 transition-all-300">Habilidades</a>
+        <a href="#contacto" class="block text-lg text-gray-600 hover:text-teal-600 transition-all-300">Contacto</a>
+    </div>
+
+    <main class="container mx-auto mt-8">
+
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="section-padding header-bg rounded-lg shadow-xl text-center flex flex-col items-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 text-white">Hola, soy [Tu Nombre]</h1>
+            <p class="text-2xl text-gray-200 mb-6">Desarrollador Web | Diseñador UX/UI</p>
+            <!-- Botón "Ver Proyectos" reubicado y estilizado -->
+            <div class="mt-8">
+                <a href="#proyectos" class="bg-teal-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all-300">Ver Proyectos</a>
+            </div>
+        </section>
+
+        <!-- Sección Acerca de Mí -->
+        <section id="acerca-de-mi" class="section-padding mt-16">
+            <h2 class="text-4xl font-bold text-center mb-8">Acerca de Mí</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <img src="C:\Users\AlumnosMTP\Desktop\Portafolio personal\foto de perfil.jpg" alt="" class="rounded-full w-58 h-48 mb-7 md:mb-0 shadow-lg">
+                <article>
+                    <p class="text-lg leading-relaxed mb-4">
+                        Soy un apasionado desarrollador web con 2 años de experiencia en la creación de aplicaciones web
+                        dinámicas y responsivas. Mi objetivo es convertir ideas complejas en interfaces de usuario
+                        elegantes y funcionales.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Fuera del código, disfruto de hacer fotografía, lo que me ayuda a mantener una perspectiva fresca y
+                        creativa. Siempre estoy buscando aprender nuevas tecnologías y enfrentar desafíos.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos -->
+        <section id="proyectos" class="section-padding bg-gray-200 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-bold text-center mb-8">Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Proyecto 1 -->
+                <article class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition-all-300">
+                    <h3 class="text-2xl font-semibold mb-2">¿Verdad o Reto?</h3>
+                    <p class="text-gray-600 mb-4">Una pagina web que podrás jugar verdad  o reto con tus amigos. Tiene una gran variedad de retos y preguntas para poder divertir juntos con tus amigos!</p>
+                    <a href="https://github.com/ElMax20/Verdad-o-Reto" class="text-teal-600 hover:text-teal-500 transition-all-300">Ver en GitHub &rarr;</a>
+                </article>
+                <!-- Proyecto 2 -->
+                <article class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition-all-300">
+                    <h3 class="text-2xl font-semibold mb-2">EcoTips Express</h3>
+                    <p class="text-gray-600 mb-4">Una pagina web diseñada para brindar tips sobre ecología utilizando IA.</p>
+                    <a href="https://github.com/Isaacizu/eco-tips-express" class="text-teal-600 hover:text-teal-500 transition-all-300">Ver en GitHub &rarr;</a>
+                </article>
+                <!-- Proyecto 3 -->
+                <article class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition-all-300">
+                    <h3 class="text-2xl font-semibold mb-2">Lista de Tareas</h3>
+                    <p class="text-gray-600 mb-4">Con esta pagina web podrás establecer las tareas que tengas y poder marcar como completado y desmarcarlo.</p>
+                    <a href="https://github.com/ElMax20/Lista-de-Tareas" class="text-teal-600 hover:text-teal-500 transition-all-300">Ver en GitHub &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Habilidades -->
+        <section id="habilidades" class="section-padding">
+            <h2 class="text-4xl font-bold text-center mb-8">Habilidades</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-teal-600 text-white px-4 py-2 rounded-full font-semibold shadow-md hover:bg-teal-700 transition-all-300">HTML5</span>
+                <span class="bg-teal-600 text-white px-4 py-2 rounded-full font-semibold shadow-md hover:bg-teal-700 transition-all-300">CSS3</span>
+                <span class="bg-teal-600 text-white px-4 py-2 rounded-full font-semibold shadow-md hover:bg-teal-700 transition-all-300">JavaScript</span>
+                <span class="bg-teal-600 text-white px-4 py-2 rounded-full font-semibold shadow-md hover:bg-teal-700 transition-all-300">React</span>
+                <span class="bg-teal-600 text-white px-4 py-2 rounded-full font-semibold shadow-md hover:bg-teal-700 transition-all-300">Node.js</span>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="section-padding bg-gray-200 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-bold text-center mb-8">Contacto</h2>
+            <form id="contact-form" class="max-w-xl mx-auto space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium mb-1">Nombre</label>
+                    <input type="text" id="name" name="name" class="contact-input" placeholder="Tu Nombre" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium mb-1">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="contact-input" placeholder="tu.email@ejemplo.com" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium mb-1">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" class="contact-input" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+                <div id="form-message" class="text-center font-bold text-red-500 hidden"></div>
+                <button type="submit" class="w-full bg-teal-600 text-white font-bold py-3 px-4 rounded-lg shadow-lg hover:bg-teal-700 transition-all-300 transform hover:scale-105">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-200 text-gray-500 text-center py-6 mt-12">
+        <p>&copy; 2024 Mi Portafolio Personal. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Vinculación del archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
